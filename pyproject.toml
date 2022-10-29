@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ggoblast"
+version = "0.1.0"
+description = ""
+authors = ["LEv145, Vignie-Babul"]
+license = "BSD-3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
