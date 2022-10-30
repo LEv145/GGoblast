@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+:root {
+  	--main-bg-color: #424242;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+	padding: 0 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+    background-color: var(--main-bg-color);
+    height: 64px;
+}
+
+.header-left-block {
+	display: flex;
+	gap: 10px;
+}
+
+.header-right-block {
+	display: flex;
+}
+
+.header-link {
+	font-family: "Roboto", sans-serif;
+	font-size: 14.4px;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+
+
+.container {
+	margin: 20px 95px;
+}
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_btn {
+	margin-top: 10px;
+}
+
+.content-title {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+
+.events-content {
+	display: flex;
+}
+
+.events-header {
+	display: flex;
+    justify-content: space-around;
+
+	padding: 10px 0;
+    width: 100%;
+    background-color: #565353;
+}
+
+.content_margin {
+	margin: 10px 0;
+}
+
+
+.event_cards {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.event_card {
+	padding: 10px 15px;
+
+	display: flex;
+
+	background: #ef6c00;
+}
+
+.event_card-time {
+	font-family: "Roboto", sans-serif;
+	font-size: 9px;
+	color: white;
+}
+
+.event_card-title {
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: white;
+}
+
+.event_card-image {
+	width: 64px;
+	height: 64px;
+}
+
+.event_card-content {
+	height: 70px;
+
+	margin-left: 20px;
+}
+
+
+.event-title {
+	font-family: "Roboto", sans-serif;
+	margin: 10px 0;
+}
+
+.title_block-data {
+	font-family: "Roboto", sans-serif;
+	font-size: 9px;
+}
+
+.title_block-tags {
+	font-family: "Roboto", sans-serif;
+	font-size: 9px;
+}
+
+.title_block-content {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+.event_img {
+	display: flex;
+	justify-content: center;
+}
+
+.event_img-content {
+	height: 500px;
+	width: 700px;
+}
+
+.event-desc {
+	font-family: "Roboto", sans-serif;
+	font-size: 10px;
+}

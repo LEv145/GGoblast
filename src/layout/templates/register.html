@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    {% csrf_token %}
+    <div class="content-title content_margin">Registration form</div>
+    <form method="POST">
+        {% for field in form %}
+            <div class="form-field">
+                {{ field.errors }}
+                {{ field.label_tag }} {{ field }}
+            </div>
+        {% endfor %}
+        <input type="submit" value="Подтвердить" class="waves-effect waves-light btn form_btn">
+    </form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="events-content">
+    <div class="events-header">
+        <a href="/events/new" class="header-link">Новые</a>
+        <a href="/events/my" class="header-link">Мои</a>
+        <a href="/events/create" class="header-link">Создать</a>
+    </div>
+    <div class="event-content">
+        {% block event-content %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}
