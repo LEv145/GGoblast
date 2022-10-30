@@ -1,42 +1,38 @@
 from django.db import models
 
 
-class Profile(models.Model):
-    name = models.TextField()
-    surname = models.TextField()
-    password = models.TextField()
+class Interest(models.Model):
+    name = models.CharField(max_length=50)
 
-    telephone_number = models.TextField(blank=True)
-    email = models.TextField(blank=True)
-    image = models.ImageField(blank=True, upload_to="profile/")
-
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
 
-class ProfileInterest(models.Model):
-    name = models.TextField()
-    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+class Profile(models.Model):
+    name = models.CharField(max_length=50)
+    surname = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
 
-    def __str__(self) -> str:
+    telephone_number = models.CharField(blank=True, max_length=20)
+    email = models.CharField(blank=True, max_length=50)
+    # image = models.ImageField(blank=True, upload_to="profile/")
+
+    interests = models.ManyToManyField(blank=True, to=Interest)
+
+    def __str__(self):
         return self.name
 
 
 class Event(models.Model):
-    name = models.TextField()
+    name = models.CharField(max_length=50)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     description = models.TextField()
 
-    image = models.ImageField(blank=True, upload_to="events/")
+    # image = models.ImageField(blank=True, upload_to="events/")
+    interests = models.ManyToManyField(blank=True, to=Interest)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
 
-class EventInterest(models.Model):
-    name = models.TextField()
-    event = models.ForeignKey(Event, on_delete=models.CASCADE)
-
-    def __str__(self) -> str:
-        return self.name

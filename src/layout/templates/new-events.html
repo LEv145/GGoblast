@@ -4,6 +4,7 @@
 {% block content %}
 
 <div class="event_cards content_margin">
+    <div class="page_title">Мероприятия</div>
     {% for event in object_list %}
         <a class="event_card" href={% url "event" event.pk %}>
             {% if event.image %}
@@ -12,7 +13,7 @@
             <div class="event_card-content">
                 <div class="event_card-time">Начало: {{ event.start_time }} | Конец: {{ event.end_time }}</div>
                 <div class="event_card-title">{{ event.name }}</div>
-                <div class="event_card-tags">{{ event.interests.all|join:", " }}</div>
+                <div class="event_card-tags">Теги: {{ event.interests.all|join:", " }}</div>
             </div>
         </a>
     {% empty %}

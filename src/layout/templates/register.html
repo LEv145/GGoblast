@@ -3,7 +3,7 @@
 
 {% block content %}
     {% csrf_token %}
-    <div class="content-title content_margin">Registration form</div>
+    <div class="content-title content_margin page_title">Регестрация</div>
     <form method="POST">
         {% for field in form %}
             <div class="form-field">
@@ -11,6 +11,6 @@
                 {{ field.label_tag }} {{ field }}
             </div>
         {% endfor %}
-        <input type="submit" value="Подтвердить" class="waves-effect waves-light btn form_btn">
     </form>
+    <input type="submit" value="Подтвердить" class="green waves-effect waves-light btn form_btn">
 {% endblock %}

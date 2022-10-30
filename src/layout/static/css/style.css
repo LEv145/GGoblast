@@ -13,6 +13,14 @@
 }
 
 
+/* Modify Materiaize.css */
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: unset !important ;
+    opacity: unset !important ;
+    pointer-events: unset !important ;
+}
+
+
 .header {
 	padding: 0 15px;
 
@@ -76,7 +84,7 @@
 }
 
 .content_margin {
-	margin: 10px 0;
+	margin-top: 20px;
 }
 
 
@@ -91,7 +99,7 @@
 
 	display: flex;
 
-	background: #ef6c00;
+	background: #689f38;
 }
 
 .event_card-time {
@@ -102,6 +110,7 @@
 
 .event_card-title {
 	font-family: "Roboto", sans-serif;
+	font-weight: 800;
 	font-size: 15px;
 	color: white;
 }
@@ -117,20 +126,36 @@
 	margin-left: 20px;
 }
 
+.event_card-tags {
+	font-size: 10px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
 
-.event-title {
+
+.event-content {
+	border-left: #689f38 solid;
+    border-right: #689f38 solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.event_title-block {
 	font-family: "Roboto", sans-serif;
 	margin: 10px 0;
 }
 
 .title_block-data {
 	font-family: "Roboto", sans-serif;
-	font-size: 9px;
+	font-size: 12px;
+	color: #747474;
 }
 
 .title_block-tags {
 	font-family: "Roboto", sans-serif;
-	font-size: 9px;
+	font-size: 12px;
+	color: #747474;
 }
 
 .title_block-content {
@@ -148,7 +173,49 @@
 	width: 700px;
 }
 
-.event-desc {
+.event_desc {
 	font-family: "Roboto", sans-serif;
 	font-size: 10px;
+	text-align: center;
+}
+
+.event_title {
+	margin-top: 10px;
+}
+
+
+.page_title {
+	display: flex;
+	justify-content: center;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 32px;
+}
+
+.page_desc {
+	font-family: "Roboto", sans-serif;
+	font-size: 19px;
+}
+
+.page_desc:first-letter {
+	font-family: "Roboto", sans-serif;
+	font-size: 22px;
+}
+
+.main_page-date {
+	font-family: "Roboto", sans-serif;
+	font-size: 22px;
+}
+
+.main_page-content {
+	width: 700px;
+}
+
+.main_page-image {
+	width: 700px;
+	object-fit: cover;
+}
+
+.main_page-desc {
+		
 }

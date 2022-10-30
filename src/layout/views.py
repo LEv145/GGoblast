@@ -4,6 +4,10 @@ from .forms import RegisterForm
 from .models import Event
 
 
+class MainView(generic.TemplateView):
+    template_name = "main.html"
+
+
 class RegisterView(generic.FormView):
     template_name = "register.html"
     form_class = RegisterForm
