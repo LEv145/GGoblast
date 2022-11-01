@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ggoblast"
+version = "0.1.0"
+description = ""
+authors = ["LEv145 <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.3"
+django-phonenumber-field = {extras = ["phonenumberslite"], version = "^7.0.0"}
+pillow = "^9.3.0"
+django-stubs = {extras = ["compatible-mypy"], version = "^1.12.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

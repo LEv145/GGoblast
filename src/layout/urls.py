@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from .views import RegisterView, NewEventsView, EventView, MainView
 
 
-urlpatterns =[
+urlpatterns = [
     path("", MainView.as_view()),
     path("registration", RegisterView.as_view()),
     path("events", NewEventsView.as_view()),
