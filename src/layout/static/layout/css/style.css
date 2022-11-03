@@ -164,19 +164,17 @@
 }
 
 .event_img {
-	display: flex;
-	justify-content: center;
-}
+	display: grid;
+	justify-items: center;
+	align-items: center;
 
-.event_img-content {
 	height: 500px;
-	width: 700px;
 }
 
 .event_desc {
+	margin-top: 10px;
 	font-family: "Roboto", sans-serif;
 	font-size: 10px;
-	text-align: center;
 }
 
 .event_title {
@@ -217,5 +215,5 @@
 }
 
 .main_page-desc {
-		
+
 }

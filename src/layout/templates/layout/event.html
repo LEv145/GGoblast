@@ -1,12 +1,12 @@
-{% extends "base.html" %}
+{% extends "layout/base.html" %}
 
 
 {% block content %}
 <div class="event-content content_margin">
     <div class="event_title-block title_block">
-        <div class="title_block-data">Начало: {{ event.start_time }} | Конец: {{ event.end_time }}</div>
-        <div class="title_block-tags">Теги: {{ event.interests.all|join:", " }}</div>
-        <div class="title_block-content page_title event_title">{{ event.name }}</div>
+        <div class="title_block-data">Начало: {{ object.start_at }} | Конец: {{ object.end_at }}</div>
+        <div class="title_block-tags">Теги: {{ object.interests.all|join:", " }}</div>
+        <div class="title_block-content page_title event_title">{{ object.name }}</div>
     </div>
     {% if object.image %}
         <div class="event_img">

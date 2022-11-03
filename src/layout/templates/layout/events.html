@@ -1,8 +1,7 @@
-{% extends "events-base.html" %}
+{% extends "layout/events-base.html" %}
 
 
 {% block content %}
-
 <div class="event_cards content_margin">
     <div class="page_title">Мероприятия</div>
     {% for event in object_list %}
@@ -20,5 +19,4 @@
         <div class="event_card-empty">Пока нету новых событий.</div>
     {% endfor %}
 </div>
-
 {% endblock %}
